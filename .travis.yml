@@ -31,7 +31,8 @@ branches:
 addons:
   apt:
     packages:
-      - doxygen-latex
+      - doxygen
+      - graphviz
 
 # Install Python PlatformIO
 install:
