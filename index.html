@@ -81,12 +81,17 @@ $(function() {
 <li>Generic examples / AVR / ESP8266 / ESP32 support</li>
 </ul>
 <h2>Hardware</h2>
-<p>dfdf</p>
-<h2>Examples</h2>
+<p>The following targets are supported:</p>
 <ul>
-<li><a href="https://github.com/Erriez/ErriezMCP23017/blob/master/examples/ErriezMCP23017_Blink.ino/ErriezMCP23017_Blink.ino">LED Blink</a> Getting started example.</li>
+<li>AVR: UNO, MINI, Pro Mini 8/16 MHz, ATMega2560, Leonardo</li>
+<li>ARM: DUE</li>
+<li>ESP8266: Mini D1 &amp; D2, NodeMCU</li>
+<li>ESP32: Lolin D32</li>
 </ul>
+<h2>Examples</h2>
+<p>Extensive examples are located <a href="https://github.com/Erriez/ErriezMCP23017/tree/master/examples">here</a>.</p>
 <h2>Documentation</h2>
+<p>Doxygen API documentation is located <a href="https://erriez.github.io/ErriezMCP23017">here</a>.</p>
 <p><b>Getting started LED blink</b></p>
 <div class="fragment"><div class="line">{c++}</div><div class="line">#include &lt;Arduino.h&gt;</div><div class="line">#include &lt;Wire.h&gt;</div><div class="line">#include &lt;ErriezMCP23017.h&gt;</div><div class="line"></div><div class="line">// PORTA: pins 0..7</div><div class="line">// PORTB: pins 8..15</div><div class="line">#define LED_PIN                 8 // Pin B0</div><div class="line"></div><div class="line">// Default I2C Address 0x20</div><div class="line">#define MCP23017_I2C_ADDRESS    0x20</div><div class="line"></div><div class="line">// Create MCP23017 object</div><div class="line">ErriezMCP23017 mcp = ErriezMCP23017(MCP23017_I2C_ADDRESS);</div><div class="line"></div><div class="line">void setup()</div><div class="line">{</div><div class="line">    // Initialize Wire</div><div class="line">    Wire.begin();</div><div class="line">    Wire.setClock(400000);</div><div class="line"></div><div class="line">    // Initialize MCP23017</div><div class="line">    while (!mcp.begin()) {</div><div class="line">        // MCP23017 not detected</div><div class="line">        delay(3000);</div><div class="line">    }</div><div class="line"></div><div class="line">    // LED pin output</div><div class="line">    mcp.pinMode(LED_PIN, OUTPUT);</div><div class="line">}</div><div class="line"></div><div class="line">void loop()</div><div class="line">{</div><div class="line">    mcp.digitalWrite(LED_PIN, HIGH);</div><div class="line">    delay(1000);</div><div class="line">    mcp.digitalWrite(LED_PIN, LOW);</div><div class="line">    delay(1000);</div><div class="line">}</div></div><!-- fragment --><h2>Library installation</h2>
 <p>Please refer to the <a href="https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki">Wiki</a> page.</p>
