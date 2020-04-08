@@ -6,6 +6,7 @@ This is a MCP23017 16-pin I2C IO-expander library for Arduino with interrupt cha
 
 ![MCP23017 16-pin I2C IO-expander](https://raw.githubusercontent.com/Erriez/ErriezMCP23017/master/extras/MCP23017-pins.png)
 
+
 ## Library features
 
 * I2C interface
@@ -16,15 +17,26 @@ This is a MCP23017 16-pin I2C IO-expander library for Arduino with interrupt cha
 * Low-power support
 * Generic examples / AVR / ESP8266 / ESP32 support
 
+
 ## Hardware
 
-dfdf
+The following targets are supported:
+
+* AVR: UNO, MINI, Pro Mini 8/16 MHz, ATMega2560, Leonardo
+* ARM: DUE
+* ESP8266: Mini D1 & D2, NodeMCU
+* ESP32: Lolin D32
+
 
 ## Examples
 
-* [LED Blink](https://github.com/Erriez/ErriezMCP23017/blob/master/examples/ErriezMCP23017_Blink.ino/ErriezMCP23017_Blink.ino) Getting started example.
+Extensive examples are located [here](https://github.com/Erriez/ErriezMCP23017/tree/master/examples).
+
 
 ## Documentation
+
+Doxygen API documentation is located [here](https://erriez.github.io/ErriezMCP23017).
+
 
 **Getting started LED blink**
 
@@ -68,9 +80,11 @@ void loop()
 }
 ```
 
+
 ## Library installation
 
 Please refer to the [Wiki](https://github.com/Erriez/ErriezArduinoLibrariesAndSketches/wiki) page.
+
 
 ## Other Arduino Libraries and Sketches from Erriez
 
