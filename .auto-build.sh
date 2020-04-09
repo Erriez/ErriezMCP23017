@@ -50,7 +50,7 @@ function generate_doxygen()
         make -C latex
 
         # Copy PDF to root directory
-        cp latex/refman.pdf ./ErriezMCP23017.pdf
+        cp latex/refman.pdf ./${DOXYGEN_PDF}
     fi
 }
 
