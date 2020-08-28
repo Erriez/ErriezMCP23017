@@ -56,4 +56,3 @@ function generate_doxygen()
 
 autobuild
 generate_doxygen
-

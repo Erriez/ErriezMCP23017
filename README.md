@@ -35,7 +35,8 @@ Extensive examples are located [here](https://github.com/Erriez/ErriezMCP23017/t
 
 ## Documentation
 
-Doxygen API documentation is located [here](https://erriez.github.io/ErriezMCP23017).
+- [Online HTML](https://erriez.github.io/ErriezMCP23017)
+- [Download PDF](https://github.com/Erriez/ErriezMCP23017/raw/master/ErriezMCP23017.pdf)
 
 
 **Getting started LED blink**
