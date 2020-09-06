@@ -1,0 +1,25 @@
+{
+    "name": "ErriezMCP23017",
+    "version": "1.0.0",
+    "keywords": "arduino, library, mcp23017, 16-pins, input, output, io-expander, interrupt, i2c, smbus, uno, atmega328, esp8266, esp32, due, hardware, documentation, examples, erriez",
+    "description": "This is a 16-pin IO-expander with extended examples and interrupt handling.",
+    "homepage": "https://github.com/Erriez/ErriezArduinoLibrariesAndSketches",
+    "license": "MIT",
+    "authors": {
+        "name": "Erriez",
+        "url": "https://github.com/Erriez",
+        "maintainer": true
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Erriez/ErriezMCP23017.git",
+        "branch": "master"
+    },
+    "frameworks": "arduino",
+    "platforms": [
+        "atmelavr",
+        "atmelsam",
+        "espressif8266",
+        "espressif32"
+    ]
+}
